@@ -1,0 +1,83 @@
+<style>
+/* Basic styling to resemble the image structure */
+.integration-region-title {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for title */
+}
+
+.grid-relatorios-styled {
+    display: grid;
+    /* Adjust grid columns for a similar look, 3 columns seems to fit the Capim region better */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Spacing between the boxes */
+    padding: 10px;
+    max-width: 900px; /* Optional: Constrain width like the image */
+    margin: 0 auto;
+}
+
+.grid-relatorios-styled div {
+    /* Style for the individual "boxes" */
+    background: linear-gradient(145deg, #e6f0ff, #c3d9ff); /* Light blue gradient for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px 10px; /* Padding inside the box */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    min-height: 50px; /* Ensure boxes have a minimum height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-relatorios-styled a {
+    /* Style for the link text inside the box */
+    text-decoration: none; /* Remove underline */
+    color: #1f3a93; /* Darker blue text color */
+    font-family: sans-serif;
+    font-weight: 600; /* Semi-bold text */
+    font-size: 0.95em;
+    display: block; /* Make the link fill the div */
+    width: 100%;
+    height: 100%;
+}
+
+/* Optional: Style to mimic the 'BS City Name' format */
+.grid-relatorios-styled a::before {
+    content: "BS "; /* Add "BS " before the city name */
+}
+
+/* Optional: Style for the link hover effect */
+.grid-relatorios-styled div:hover {
+    background: linear-gradient(145deg, #d8e5ff, #a8c4ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styling for the last item "BS ULIANÓPOLIS" in the image which spans the width. */
+/* Since the Baixo Amazonas list has 13 items, we'll make the 13th one span the width (like ULIANÓPOLIS) */
+.grid-relatorios-styled div:nth-child(13) {
+    grid-column: span 3; /* Make the 13th item span all 3 columns */
+    /* Adjust gradient for the bottom item to be slightly lighter, matching the image */
+    background: linear-gradient(145deg, #eef5ff, #d8e5ff);
+}
+
+</style>
+
+<h6 class="integration-region-title">REGIÃO DE INTEGRAÇÃO BAIXO AMAZONAS 2023</h6>
+<div class="grid-relatorios-styled">
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-ALENQUER-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Alenquer</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-ALMEIRIM-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Almeirim</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-BELTERRA-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Belterra</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-CURUA-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Curuá</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-FARO-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Faro</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-JURUTI-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Juruti</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-MOJUI-DOS-CAMPOS-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Mojuí dos Campos</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-MONTE-ALEGRE-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Monte Alegre</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-OBIDOS-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Óbidos</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/02/BS-ORIXIMINA-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Oriximiná</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-PRAINHA-RI-BAIXO-AMAZONAS-2023-1.pdf" target="_blank" rel="noopener">Prainha</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-SANTAREM-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Santarém</a></div>
+    <div><a href="https://www.fapespa.pa.gov.br/wp-content/uploads/2025/01/BS-TERRA-SANTA-RI-BAIXO-AMAZONAS-2023.pdf" target="_blank" rel="noopener">Terra Santa</a></div>
+</div>

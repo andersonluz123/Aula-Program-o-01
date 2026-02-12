@@ -1,0 +1,6 @@
+{
+    "github.copilot.chat.completionContext.typescript.mode": "on",
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "liveServer.settings.port": 5501,
+    "git.ignoreLimitWarning": true
+}

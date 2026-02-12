@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios HTML</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Adiciona padding no topo para o conteúdo não ficar atrás do cabeçalho fixo */
+        padding-top: 50px; /* Ajuste este valor se a altura do seu cabeçalho mudar */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/03/Wormhole5475518584.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            background-color: #fff; /* Cor de fallback caso a imagem não carregue */
+        }
+        
+        /* Estilos para o cabeçalho principal */
+        header {
+            background-color: #1f169ca8;
+            color: rgb(209, 203, 203);
+            padding: 5px 5px;
+            width: 100%;
+            display: flex; /* Habilita o Flexbox no header */
+            justify-content: space-between; /* Alinha o título e o menu nas extremidades */
+            align-items: center; /* Centraliza verticalmente */
+            box-sizing: border-box; /* Garante que o padding não adicione largura extra */
+            /* --- Código adicionado para fixar o cabeçalho --- */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+        }
+
+        /* Estilos para o menu de navegação do cabeçalho */
+        header nav ul {
+            list-style: none; /* Remove as bolinhas da lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Alinha os itens do menu horizontalmente */
+            gap: 20px; /* Adiciona espaçamento entre os itens */
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #333366;
+        }
+
+        /* Estilos para a lista de botões no meio da tela */
+        #menu-navegacao {
+            margin: 200px 0; /* Espaçamento para o menu de botões */
+            align-self: flex-start; /* Alinha o menu de botões à esquerda */
+            margin-left: 20px;
+        }
+
+        .botao-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            background: #e0dddd;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .botao-link:hover {
+            background: #29416d;
+            color: white;
+        }
+        
+        /* Estilo para o conteúdo principal */
+        #conteudo {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(253, 253, 253, 0.712);
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #1f169ca8;
+            color: rgb(209, 203, 203);
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+            margin-top: auto; /* Empurra o rodapé para o final da página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projeto-1</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <nav id="menu-navegacao">
+            <a href="exercicios/teste1.html" class="botao-link">01 - Teste 1</a><br><br>
+            <a href="exercicios/teste2.html" class="botao-link"> 02 -Fapespa bet</a><br><br>
+            <a href="exercicios/listas.html" class="botao-link">03 - Listas</a><br><br>
+            <a href="exercicios/listas2.html" class="botao-link">04 - Listas 2</a><br><br>
+            <a href="exercicios/links.html" class="botao-link">05 - Links</a><br><br>
+            <a href="exercicios/tabela.html" class="botao-link">06 - Tabela</a><br><br>
+            <a href="exercicios/form/form.html" class="botao-link">07 - Formulário</a><br><br>
+            <a href="exercicios/imagens.html" class="botao-link">08 - Imagens GOKU</a><br><br>
+            <a href="exercicios/video.html" class="botao-link">09 - Video</a> <br><br>
+            <a href="exercicios/jogos.html" class="botao-link">10 - Jogos</a>
+        </nav>
+    </main>
+
+    <section id="conteudo"></section>
+    <footer>
+        <p>Meu Rodapé</p>
+    </footer>
+</body>
+</html>

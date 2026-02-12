@@ -1,0 +1,11 @@
+let qualquer = 'legal'
+console.log(qualquer)
+console.log(typeof qualquer)
+
+qualquer = 3.1234
+console.log(qualquer)
+console.log(typeof qualquer)
+
+let valor  = ''
+let numento = 1 
+let pqp = false
